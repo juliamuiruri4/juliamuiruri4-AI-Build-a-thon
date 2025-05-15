@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background: #4CAF50;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
+
+/* Category Styling */
+.category {
+  margin-bottom: 2rem;
+}
+
+.category h2 {
+  color: #4CAF50;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.category p {
+  font-style: italic;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  flex: 1 1 calc(33% - 2rem);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h3 {
+  font-size: 1.2rem;
+}
+
+.product-item .product-image {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+  }
+
+  .product-item {
+    flex: 1 1 100%;
+  }
+}
